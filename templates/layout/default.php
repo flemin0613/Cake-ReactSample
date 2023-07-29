@@ -1,0 +1,28 @@
+<?php
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <?= $this->Html->charset() ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+
+    </title>
+    <?= $this->Html->css(['default']) ?>
+    <?= $this->fetch('meta') ?>
+    <?= $this->fetch('css') ?>
+    <?= $this->fetch('script') ?>
+    
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <?= $this->Flash->render() ?>
+            <?= $this->fetch('content') ?>
+        </div>
+    </main>
+    <!-- body内で描画後 reactブロックの内容を取得 -->
+    <?= $this->fetch('react') ?>
+</body>
+</html>
