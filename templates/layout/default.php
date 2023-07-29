@@ -13,9 +13,8 @@
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
-    
 </head>
-<body>
+<body></body>
     <main class="main">
         <div class="container">
             <?= $this->Flash->render() ?>
